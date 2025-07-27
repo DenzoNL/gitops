@@ -5,9 +5,5 @@
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/tailscale-operator/infra",
   "srcRepoURL": "https://github.com/DenzoNL/gitops.git",
-  "srcTargetRevision": "",
-  "labels": null,
-  "annotations": null,
-  "exclude": "",
-  "include": ""
+  "srcTargetRevision": ""
 }
