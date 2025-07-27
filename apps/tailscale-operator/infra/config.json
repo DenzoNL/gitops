@@ -1,9 +1,0 @@
-{
-  "appName": "tailscale-operator",
-  "userGivenName": "tailscale-operator",
-  "destNamespace": "tailscale",
-  "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/tailscale-operator/infra",
-  "srcRepoURL": "https://github.com/DenzoNL/gitops.git",
-  "srcTargetRevision": ""
-}
