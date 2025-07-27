@@ -6,7 +6,6 @@ metadata:
   annotations:
     tailscale.com/expose: "true"
     tailscale.com/hostname: "argocd"
-    tailscale.com/tags: "k8s-operator"
 spec:
   type: LoadBalancer
   loadBalancerClass: tailscale
