@@ -1,0 +1,30 @@
+# Tailscale Operator Helm Values
+# You'll need to update this with your actual Tailscale configuration
+
+operator:
+  # The operator needs a Tailscale auth key to join your tailnet
+  # You can create one at: https://login.tailscale.com/admin/settings/keys
+  # Then create a Kubernetes secret with it, or use this values file
+  
+  # Option 1: Use an existing secret (recommended)
+  authKeySecretName: tailscale-auth
+  authKeySecretKey: authkey
+  
+  # Option 2: Set the auth key directly (less secure)
+  # authKey: "your-auth-key-here"
+
+# Resource requests and limits
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+
+# RBAC settings
+rbac:
+  create: true
+
+serviceAccount:
+  create: true
